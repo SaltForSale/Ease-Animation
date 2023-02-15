@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ease Animations</title>
+    <style>
+      div {
+        width: 100px;
+        height: 50px;
+        background-color: green;
+        font-weight: bold;
+        position: relative;
+        animation: mymove 5s infinite;
+      }
+      #div {
+        animation-timing-function: linear;
+      }
+      #div {
+        animation-timing-function: ease;
+      }
+      #div {
+        animation-timing-function: ease-in;
+      }
+      #div {
+        animation-timing-function: ease-out;
+      }
+      #div {
+        animation-timing-function: ease-in-out;
+      }
+      @keyframes mymove {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ease Animations</h1>
+    <div id="div1">Linear</div>
+    <div id="div2">Ease</div>
+    <div id="div2">Ease-In</div>
+    <div id="div2">Ease-Out</div>
+    <div id="div2">Ease-In-Out</div>
+  </body>
+</html>
